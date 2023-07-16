@@ -24,6 +24,8 @@
     column-gap: 8px;
     padding-right: 70px;
     font-size: 16px;
+    cursor: pointer;
+
   }
 
   &__button-flights:after {
@@ -173,6 +175,7 @@
       height: 48px;
       border-radius: 4px;
       @include font($size: 14px, $weight: 500);
+      cursor: pointer;
     }
   }
 
