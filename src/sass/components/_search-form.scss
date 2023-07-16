@@ -25,7 +25,6 @@
     padding-right: 70px;
     font-size: 16px;
     cursor: pointer;
-
   }
 
   &__button-flights:after {
@@ -182,6 +181,9 @@
   &__button-show {
     background: $color-primary;
     padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__button-add {
