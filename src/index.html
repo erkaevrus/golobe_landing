@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__line">
+        <div class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+              <svg class="navigation__icon-airplane" width="24" height="24">
+                <use xlink:href="#airplane"></use>
+              </svg>
+              <span>Find Flight</span> 
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg class="navigation__icon-bed" width="24" height="24">
+                  <use xlink:href="#bed"></use>
+                </svg>
+                <span>Find Stays</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__logo-line">
+          <img class="header__logo" src="./assets/images/logo.png" alt="logo">
+        </div>
+        <div class="header__button">
+          <button>Login</button>
+          <button class="button">Sign up</button>
+        </div>
+      </div>
+      <h2 class="header__subtitle">Helping Others</h2>
+      <h1 class="header__title">Live & Travel</h1>
+      <p class="header__text">Special offers to suit your plan</p>
+
+      <section class="search-form">
+          <div class="search-form__header">
+            <div class="search-form__button-flights search-form__button_active">
+              <a class="search-form__link">
+                <svg class="search-form__icon-airplane" width="24" height="24">
+                  <use xlink:href="#airplane"></use>
+                </svg>
+                <span>Flights</span>
+              </a>
+            </div>
+            <div class="search-form__button-stays">
+              <a class="search-form__link">
+                <svg class="search-form__icon-bed" width="24" height="24">
+                  <use xlink:href="#bed"></use>
+                </svg>
+                <span>Stays</span>
+              </a>
+            </div>
+          </div> 
+
+          <form class="form" action="#" method="POST">
+            <div class="form__line">
+              <div class="form__input-from-to">
+                <label  for="from-to">From - To</label>
+                <input id="from-to" type="text" name="from-to" value="Lahore - Karachi">
+                <svg width="24" height="24">
+                  <use xlink:href="#swap-horizontal"></use>
+                </svg>
+              </div>
+  
+              <div class="form__input-trip">
+                <label  for="trip">Trip</label>
+                <input id="trip" type="text" name="from-to" value="Return">
+                <svg width="24" height="24">
+                  <use xlink:href="#arrow-drop-down"></use>
+                </svg>
+              </div>
+  
+              <div class="form__input-depart-return">
+                <label  for="depart-return">Depart-Return</label>
+                <input id="depart-return" type="text" name="depart-return" value="07 Nov 22 - 13 Nov 22">
+              </div>
+  
+              <div class="form__input-passenger-class">
+                <label  for="passenger-class">Passenger - Class</label>
+                <input id="passenger-class" type="text" name="passenger-class" value="1 Passenger, Economy">
+              </div>
+            </div>
+            <div class="form__buttons">
+              <button class="form__button-add">
+                <svg width="16" height="16">
+                  <use xlink:href="#plus"></use>
+                </svg>
+                <span>Add Promo Code</span>
+              </button>
+              <button class="form__button-show">
+                <svg width="16" height="16">
+                  <use xlink:href="#paper-plane"></use>
+                </svg>
+                <span>Show Filghts</span>
+              </button>
+            </div>
+          </form>
+      </section>
+      </div>
+  </header>
+  <main>
+    <section class="plan">
+      <div class="plan__container container">
+        <div class="plan__header">
+          <div class="info">
+            <h3 class="plan__title">Plan your perfect trip</h3>
+          <p class="plan__subtitle">Search Flights & Places Hire to our most popular destinations</p>
+          </div>
+          <div class="plan__button">
+            <button>See more places</button>
+          </div>
+        </div>
+        <div class="plan__content">
+          <div class="plan__card">
+            <img class="plan__img">
+            <div class="plan__item-info">
+              <p class="plan__name">Istanbul, Turkey</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">• Hotels</li>
+                <li class="plan__item"> • Resorts</li>
+              </ul>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

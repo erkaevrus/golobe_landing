@@ -1,0 +1,58 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Monserrat', sans-serif;
+  @include font($size: 16px, $weight: 400);
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+ 
+h1 {
+  font-family: 'Gothic A1', sans-serif;
+  @include font($size: 80px, $weight: 700);
+}
+
+h2 {
+  font-family: 'Gothic A1', serif;
+  @include font($size: 44px, $weight: 700);
+}
+
+h3 {
+  @include font($size: 32px, $weight: 600);
+  letter-spacing: 1.25px;
+}
+
+

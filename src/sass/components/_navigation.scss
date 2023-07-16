@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  column-gap: 36px;
+  
+  &__link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__icon-airplane {
+    fill: white;
+  }
+
+  &__icon-bed {
+    fill: white;
+  }
+}

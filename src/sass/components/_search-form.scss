@@ -1,0 +1,187 @@
+.search-form {
+  background: $color-light;
+  position: absolute;
+  z-index: 2;
+  padding: 28px 32px;
+
+  top: 502px;
+  left: 73px;
+  width: 1232px;
+  height: 280px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+
+  &__header {
+    color: #112211;
+    margin-bottom: 60px;
+    display: flex;
+    position: relative;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding-right: 70px;
+    font-size: 16px;
+  }
+
+  &__button-flights:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 48px;
+    background: #D7E2EE;
+    position: absolute;
+    bottom: -12px;
+    left: 121px;
+  }
+
+}
+
+.form {
+
+  &__line {
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  &__input-from-to {
+    position: relative;
+    @include font($size: 16px, $weight: 400);
+
+    >input {
+      @include font($size: 16px, $weight: 400);
+      letter-spacing: 0.7px;
+      padding: 8px 16px;
+      outline: none;
+      height: 56px;
+      width: 324px;
+      border-radius: 4px;
+      border: 1px solid #1C1B1F;
+    }
+
+    >label {
+      position: absolute;
+      top: -5px;
+      left: 10px;
+      background: #fff;
+      padding: 0 5px;
+      color: black;
+    }
+
+    >svg {
+      position: absolute;
+      top: 15px;
+      right: 12px;;
+    }
+  }
+
+  &__input-trip {
+    position: relative;
+    @include font($size: 16px, $weight: 400);
+
+    >input {
+      @include font($size: 16px, $weight: 400);
+      letter-spacing: 0.7px;
+      padding: 8px 16px;
+      outline: none;
+      height: 56px;
+      width: 140px;
+      border-radius: 4px;
+      border: 1px solid #1C1B1F;
+    }
+
+    >label {
+      position: absolute;
+      top: -5px;
+      left: 10px;
+      background: #fff;
+      padding: 0 5px;
+      color: black;
+    }
+
+    >svg {
+      position: absolute;
+      top: 15px;
+      right: 12px;;
+    }
+  }
+
+  &__input-depart-return {
+    position: relative;
+    @include font($size: 16px, $weight: 400);
+
+    >input {
+      @include font($size: 16px, $weight: 400);
+      letter-spacing: 0.7px;
+      padding: 8px 16px;
+      outline: none;
+      height: 56px;
+      width: 324px;
+      border-radius: 4px;
+      border: 1px solid #1C1B1F;
+    }
+
+    >label {
+      position: absolute;
+      top: -5px;
+      left: 10px;
+      background: #fff;
+      padding: 0 5px;
+      color: black;
+    }
+  }
+
+  &__input-passenger-class {
+    position: relative;
+    @include font($size: 16px, $weight: 400);
+
+    >input {
+      @include font($size: 16px, $weight: 400);
+      letter-spacing: 0.7px;
+      padding: 8px 16px;
+      outline: none;
+      height: 56px;
+      width: 324px;
+      border-radius: 4px;
+      border: 1px solid #1C1B1F;
+    }
+
+    >label {
+      position: absolute;
+      top: -5px;
+      left: 10px;
+      background: #fff;
+      padding: 0 5px;
+      color: black;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 24px;
+
+    >button {
+      border: none;
+      display: flex;
+      column-gap: 4px;
+      align-items: center;
+      width: 142px;
+      height: 48px;
+      border-radius: 4px;
+      @include font($size: 14px, $weight: 500);
+    }
+  }
+
+  &__button-show {
+    background: $color-primary;
+    padding: 8px 16px;
+  }
+
+  &__button-add {
+    background: none;
+  }
+}
