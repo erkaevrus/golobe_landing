@@ -8,31 +8,483 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <div class="header__navigation">
-        <ul class="navigation">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-            <svg class="navigation__icon-airplane" width="24" height="24">
-              <use xlink:href="#airplane"></use>
-            </svg>
-            <span>Find Flight</span> 
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <svg class="navigation__icon-bed" width="24" height="24">
-                <use xlink:href="#bed"></use>
+      <div class="header__line">
+        <div class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+              <svg class="navigation__icon-airplane" width="24" height="24">
+                <use xlink:href="#airplane"></use>
               </svg>
-              <span>Find Stays</span>
-            </a>
+              <span>Find Flight</span> 
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <svg class="navigation__icon-bed" width="24" height="24">
+                  <use xlink:href="#bed"></use>
+                </svg>
+                <span>Find Stays</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__logo-line">
+          <img class="header__logo" src="./image/logo.png" alt="logo">
+        </div>
+        <div class="header__button">
+          <button>Login</button>
+          <button class="button">Sign up</button>
+        </div>
+      </div>
+      <h2 class="header__subtitle">Helping Others</h2>
+      <h1 class="header__title">Live & Travel</h1>
+      <p class="header__text">Special offers to suit your plan</p>
+
+      <section class="search-form">
+          <div class="search-form__header">
+            <div class="search-form__button-flights search-form__button_active">
+              <a class="search-form__link">
+                <svg class="search-form__icon-airplane" width="24" height="24">
+                  <use xlink:href="#airplane"></use>
+                </svg>
+                <span>Flights</span>
+              </a>
+            </div>
+            <div class="search-form__button-stays">
+              <a class="search-form__link">
+                <svg class="search-form__icon-bed" width="24" height="24">
+                  <use xlink:href="#bed"></use>
+                </svg>
+                <span>Stays</span>
+              </a>
+            </div>
+          </div> 
+
+          <form class="form" action="#" method="POST">
+            <div class="form__line">
+              <div class="form__input-from-to">
+                <label  for="from-to">From - To</label>
+                <input id="from-to" type="text" name="from-to" value="Lahore - Karachi">
+                <svg width="24" height="24">
+                  <use xlink:href="#swap-horizontal"></use>
+                </svg>
+              </div>
+  
+              <div class="form__input-trip">
+                <label  for="trip">Trip</label>
+                <input id="trip" type="text" name="from-to" value="Return">
+                <svg width="24" height="24">
+                  <use xlink:href="#arrow-drop-down"></use>
+                </svg>
+              </div>
+  
+              <div class="form__input-depart-return">
+                <label  for="depart-return">Depart-Return</label>
+                <input id="depart-return" type="text" name="depart-return" value="07 Nov 22 - 13 Nov 22">
+              </div>
+  
+              <div class="form__input-passenger-class">
+                <label  for="passenger-class">Passenger - Class</label>
+                <input id="passenger-class" type="text" name="passenger-class" value="1 Passenger, Economy">
+              </div>
+            </div>
+            <div class="form__buttons">
+              <button class="form__button-add">
+                <svg width="16" height="16">
+                  <use xlink:href="#plus"></use>
+                </svg>
+                <span>Add Promo Code</span>
+              </button>
+              <button class="form__button-show">
+                <svg width="16" height="16">
+                  <use xlink:href="#paper-plane"></use>
+                </svg>
+                <span>Show Filghts</span>
+              </button>
+            </div>
+          </form>
+      </section>
+      </div>
+  </header>
+  <main>
+    <section class="plan">
+      <div class="plan__container container">
+        <div class="plan__header">
+          <div class="info">
+            <h3 class="plan__title">Plan your perfect trip</h3>
+          <p class="plan__subtitle">Search Flights & Places Hire to our most popular destinations</p>
+          </div>
+          <div class="plan__button">
+            <button>See more places</button>
+          </div>
+        </div>
+        <div class="plan__content">
+          <div class="plan__card">
+            <img class="plan__img" src="./image/card-1.png" alt="Istanbul">
+            <div class="plan__item-info">
+              <p class="plan__name">Istanbul, Turkey</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item"> Hotels</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item">Resorts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="plan__card">
+            <img class="plan__img" src="./image/card-2.png" alt="Istanbul">
+            <div class="plan__item-info">
+              <p class="plan__name">Sydney, Australia</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item"> Hotels</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item">Resorts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="plan__card">
+            <img class="plan__img" src="./image/card-3.png" alt="Istanbul">
+            <div class="plan__item-info">
+              <p class="plan__name">Baku, Azerbaijan</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item"> Hotels</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item">Resorts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="plan__card">
+            <img class="plan__img" src="./image/card-4.png" alt="Istanbul">
+            <div class="plan__item-info">
+              <p class="plan__name">Malé, Maldives</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item"> Hotels</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item">Resorts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="plan__card">
+            <img class="plan__img" src="./image/card-5.png" alt="Istanbul">
+            <div class="plan__item-info">
+              <p class="plan__name">Paris, France</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item"> Hotels</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item">Resorts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="plan__card">
+            <img class="plan__img" src="./image/card-6.png" alt="Istanbul">
+            <div class="plan__item-info">
+              <p class="plan__name">New York, US</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item"> Hotels</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item">Resorts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="plan__card">
+            <img class="plan__img" src="./image/card-7.png" alt="Istanbul">
+            <div class="plan__item-info">
+              <p class="plan__name">London, UK</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item"> Hotels</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item">Resorts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="plan__card">
+            <img class="plan__img" src="./image/card-8.png" alt="Istanbul">
+            <div class="plan__item-info">
+              <p class="plan__name">Tokyo, Japan</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item"> Hotels</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item">Resorts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="plan__card">
+            <img class="plan__img" src="./image/card-9.png" alt="Istanbul">
+            <div class="plan__item-info">
+              <p class="plan__name">Dubai, UAE</p>
+              <ul class="plan__list">
+                <li class="plan__item">Flights</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item"> Hotels</li>
+                <li class="plan__item">•</li>
+                <li class="plan__item">Resorts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search">
+      <div class="search__container container">
+        <div class="search__card search__card_flights">
+          <h2 class="search__title">Flights</h2>
+          <p class="search__subtitle">Search Flights & Places Hire to our most popular destinations</p>
+          <button class="search__button">
+            <svg width="16" height="16">
+              <use xlink:href="#paper-plane"></use>
+            </svg>
+            <span>Show Flights</span>
+          </button>
+        </div>
+
+        <div class="search__card search__card_hotels">
+          <h2 class="search__title">Hotels</h2>
+          <p class="search__subtitle">Search hotels & Places Hire to our most popular destinations</p>
+          <button class="search__button">
+            <svg width="16" height="16">
+              <use xlink:href="#paper-plane"></use>
+            </svg>
+            <span>Show Hotels</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__container container">
+        <div class="reviews__header">
+          <div class="reviews__info">
+            <h3 class="reviews__title">Reviews</h3>
+            <p class="reviews__subtitle">What people says about Golobe facilities</p>
+          </div>
+          <div class="reviews__button">
+            <button>See All</button>
+          </div>
+        </div>
+        <div class="reviews__content">
+          <div class="reviews__card-container">
+            <div class="reviews__card">
+              <h4 class="reviews__card-title">“A real sense of community, nurtured”</h4>
+            <p class="reviews__text">Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.
+            </p>
+            <p class="reviews__view-more">View more</p>
+            <div class="reviews__rating">
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+            </div>
+            <p class="reviews__name">Olga</p>
+            <p class="reviews__line-text">Weave Studios – Kai Tak</p>
+            <div class="reviews__open-google">
+              <svg width="24" height="24">
+                <use xlink:href="#google"></use>
+              </svg>
+              <span>Google</span>
+            </div>
+            <img src="./image/review-1.png" alt="mountains">
+            </div>
+            <div class="reviews__background"></div>
+          </div>
+
+          <div class="reviews__card-container">
+            <div class="reviews__card">
+              <h4 class="reviews__card-title">“The facilities are superb. Clean, slick, bright.”
+              </h4>
+            <p class="reviews__text">“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle</p>
+            <p class="reviews__view-more">View more</p>
+            <div class="reviews__rating">
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+            </div>
+            <p class="reviews__name">Thomas</p>
+            <p class="reviews__line-text">Weave Studios – Olympic</p>
+            <div class="reviews__open-google">
+              <svg width="24" height="24">
+                <use xlink:href="#google"></use>
+              </svg>
+              <span>Google</span>
+            </div>
+            <img src="./image/review-2.png" alt="nothern light">
+            </div>
+            <div class="reviews__background"></div>
+          </div>
+
+          <div class="reviews__card-container">
+            <div class="reviews__card">
+              <h4 class="reviews__card-title">“A real sense of community, nurtured”</h4>
+            <p class="reviews__text">Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.</p>
+            <p class="reviews__view-more">View more</p>
+            <div class="reviews__rating">
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#star"></use>
+              </svg>
+            </div>
+            <p class="reviews__name">Eliot</p>
+            <p class="reviews__line-text">Weave Studios – Kai Tak</p>
+            <div class="reviews__open-google">
+              <svg width="24" height="24">
+                <use xlink:href="#google"></use>
+              </svg>
+              <span>Google</span>
+            </div>
+            <img src="./image/review-3.png" alt="ice cave">
+            </div>
+            <div class="reviews__background"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="subscribe-form">
+      <div class="subscribe-form__info">
+        <h2 class="subscribe-form__title">Subscribe Newsletter</h2>
+      <p class="subscribe-form__subtitle">The Travel</p>
+      <p class="subscribe-form__text">Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+      <div class="subscribe-form__input">
+        <input type="email" placeholder="Your email address">
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <img src="./image/mailbox.png" alt="mailbox">
+    </div>
+
+    <div class="footer__container container">
+      <div class="footer__logo-line">
+        <img class="footer__logo" src="./image/logo-2.png" alt="logo">
+        <ul class="footer__links">
+          <li class="footer__link">
+            <svg width="20" height="20">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </li>
+          <li class="footer__link">
+            <svg width="20" height="20">
+              <use xlink:href="#twitter"></use>
+            </svg>
+          </li>
+          <li class="footer__link">
+            <svg width="20" height="20">
+              <use xlink:href="#youtube"></use>
+            </svg> 
+          </li>
+          <li class="footer__link">
+            <svg width="20" height="20">
+              <use xlink:href="#instagram"></use>
+            </svg>
           </li>
         </ul>
       </div>
-      <div class="header__logo-line">
-        <img class="header__logo" src="./image/logo.png" alt="logo">
+      <div class="footer-navigation">
+        <div class="footer-navigation__column">
+          <h5 class="footer-navigation__title">Our Destinations</h5>
+          <ul class="footer-navigation__links">
+            <li><a href="#">Canada</a></li>
+            <li><a href="#">Alaksa</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Iceland</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-navigation__column">
+          <h5 class="footer-navigation__title">Our Activities</h5>
+          <ul class="footer-navigation__links">
+            <li><a href="#">Northern Lights</a></li>
+            <li><a href="#">Cruising & sailing</a></li>
+            <li><a href="#">Multi-activities</a></li>
+            <li><a href="#">Kayaing</a></li>  
+          </ul>
+        </div> 
+
+        <div class="footer-navigation__column">
+          <h5 class="footer-navigation__title">Travel Blogs</h5>
+          <ul class="footer-navigation__links">
+            <li><a href="#">Bali Travel Guide</a></li>
+            <li><a href="#">Sri Lanks Travel Guide</a></li>
+            <li><a href="#">Peru Travel Guide</a></li>
+            <li><a href="#">Bali Travel Guide</a></li>  
+          </ul>
+        </div> 
+
+        <div class="footer-navigation__column">
+          <h5 class="footer-navigation__title">About Us</h5>
+          <ul class="footer-navigation__links">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Work with us</a></li>
+          </ul>
+        </div> 
+
+        <div class="footer-navigation__column">
+          <h5 class="footer-navigation__title">Contact Us</h5>
+          <ul class="footer-navigation__links">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Work with us</a></li>
+          </ul>
+        </div> 
+        
       </div>
     </div>
-    <h1>Hello</h1>
-  </header>
+  </footer>
 </body>
 </html>
