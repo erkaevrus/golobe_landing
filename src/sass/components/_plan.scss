@@ -54,7 +54,6 @@
     width: 389px;
     border-radius: 16px;
     cursor: pointer;
-
   }
 
   &__name {
@@ -71,7 +70,5 @@
     column-gap: 10px;
     @include font($size: 14px, $weight: 500);
     letter-spacing: 0.6px;
-
-
   }
 }

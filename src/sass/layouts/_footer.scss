@@ -1,0 +1,49 @@
+.footer {
+  padding: 218px 74px 64px;
+  background: $color-primary;
+  position: relative;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo-line {
+    margin-right: 140px;
+  }
+
+  &__logo {
+    width: 120px;
+    height: 40px;
+    margin-bottom: 24px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  &__link {
+    cursor: pointer;
+  }
+}
+
+.footer-navigation {
+  display: flex;
+  column-gap: 24px;
+
+  &__column {
+    min-width: 175px;
+  }
+
+  &__title {
+    padding-bottom: 16px;
+  }
+
+  &__links {
+    >li {
+      padding-bottom: 12px;
+    }
+    @include font($size: 14px, $weight: 500);
+  }
+}

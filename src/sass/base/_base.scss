@@ -55,4 +55,15 @@ h3 {
   letter-spacing: 1.25px;
 }
 
+h4 {
+  @include font($size: 24px, $weight: 700);
+  letter-spacing: 1.25px;
+}
+
+h5 {
+  font-family: 'Gothic A1', serif;
+  @include font($size: 16px, $weight: 700);
+  letter-spacing: 1.25px;
+}
+
 
